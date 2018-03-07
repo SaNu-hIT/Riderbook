@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#ff0000">
+
+        <ImageView
+            android:layout_gravity="left"
+            android:layout_width="45dp"
+            android:src="@drawable/menustarticonnew"
+            android:id="@+id/menuicon"
+            android:paddingTop="15dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:paddingTop="16dp"
+            android:textStyle="bold"
+            android:text="ADD CONTACTS"/>
+    </LinearLayout>
+<!--
+<LinearLayout
+    android:layout_width="match_parent"
+    android:paddingTop="30dp"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    android:orientation="horizontal">
+   &lt;!&ndash; <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Add  "/>&ndash;&gt;
+   &lt;!&ndash; <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/numberfive"/>&ndash;&gt;
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=" contacts "/>
+</LinearLayout>
+-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addcontactbtn1"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/addnewcontact"
+            android:layout_marginLeft="26dp"
+            android:src="@drawable/plusaddcont"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="  Add more contacts"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listviewid"
+        android:scrollbars="none"
+        >
+
+    </ListView>
+
+</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

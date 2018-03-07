@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    >
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_bg_login"
+        android:layout_alignParentTop="true"
+        ></Spinner>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinner"
+        android:layout_marginBottom="50dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/featureslay"
+                android:padding="35dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/group"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/offer"
+                        android:checked="true"
+                        android:text="Offer Ride"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/findride"
+                        android:text="Find Ride"
+                        android:layout_marginLeft="30dp"
+                        />
+
+                </RadioGroup>
+
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    />
+
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/place_autocomplete_fragment"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Reg.No"
+                    android:layout_below="@+id/place_autocomplete_fragment2"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#e64d4d"
+                    android:textColor="#383838"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/regid"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/regid"
+                    android:hint="Vehicle Name"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#a3a3a3"
+                    android:textColor="#383838"
+                    android:textAllCaps="true"
+                    android:id="@+id/catid"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/catid"
+                    android:hint="Features"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="#a3a3a3"
+                    android:inputType="textPersonName"
+                    android:textColor="#383838"
+                    android:textAllCaps="true"
+                    android:id="@+id/features"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/features"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/datetime"
+                    >
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="Price/km"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:textColorHint="#a3a3a3"
+                        android:textColor="#383838"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/price"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="Seats"
+                        android:textColorHint="#a3a3a3"
+                        android:textColor="#383838"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="number"
+                        android:id="@+id/seats"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/datetime"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="Date"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:editable="false"
+                        android:textColorHint="#a3a3a3"
+                        android:textColor="#383838"
+                        android:id="@+id/date"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="Time"
+                        android:textColorHint="#a3a3a3"
+                        android:textColor="#383838"
+                        android:editable="false"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/time"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:background="#f41515"
+        android:text="CONFIRM"
+        android:id="@+id/confirm"
+        />
+
+</RelativeLayout>

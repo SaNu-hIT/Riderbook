@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.angeo.newproject.Socialmedialogin"
+    android:weightSum="2
+">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.7">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:textStyle="bold|italic"
+            android:src="@drawable/logoryde"
+           />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ff0000"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#3c5a9a"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:text="facebook"
+                android:gravity="left|center"
+                android:drawableLeft="@drawable/fbimg"
+                android:drawablePadding="35dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#55acee"
+                android:textColor="#ffffff"
+                android:text="twitter"
+                android:gravity="left|center"
+                android:drawableLeft="@drawable/twittericon"
+                android:drawablePadding="37dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:text="google+"
+                android:gravity="left|center"
+                android:drawableLeft="@drawable/googleplus"
+                android:drawablePadding="39dp"
+                android:layout_marginLeft="65dp"
+                android:background=" #FF0000"
+                android:layout_marginRight="65dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+                android:id="@+id/skipbtn"
+                android:layout_gravity="bottom"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="SKIP"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

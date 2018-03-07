@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/user"
+            android:layout_marginTop="15dp"
+            android:id="@+id/imageid"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageid"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/nameedt"
+                android:hint="Name"
+                android:textColorHint="@color/red3"
+                />
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/phoneedt"
+                android:hint="Phone"
+                android:textColorHint="@color/red3"
+                />
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/emailedt"
+                android:hint="Email"
+                android:textColorHint="@color/red3"
+                />
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/statedt"
+                android:hint="State"
+                android:textColorHint="@color/red3"
+                />
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/cityedt"
+                android:hint="City"
+                android:textColorHint="@color/red3"
+                />
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/pinedt"
+                android:hint="PinCode"
+                android:textColorHint="@color/red3"
+                />
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/vehicledt"
+                android:hint="Vehicle Owned"
+                android:textColorHint="@color/red3"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_border_profilesubmit"
+                android:text="EDIT"
+                android:id="@+id/submitbtn"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

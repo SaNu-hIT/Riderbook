@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+<!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:id="@+id/back"
+        android:src="@drawable/backimg"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:layout_weight=".2"
+        android:text="Voice Call"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,InefficientWeight" />
+</LinearLayout>-->
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/simpleTabLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/colorPrimary"
+        app:tabIndicatorColor="#ffffff"
+        app:tabSelectedTextColor="#ffff"
+        app:tabTextColor="#e3e4e5"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="3dp"
+        />
+        <!--app:tabMode="scrollable"-->
+
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/simpleViewPager"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

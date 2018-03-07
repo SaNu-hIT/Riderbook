@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="net.simplifiedcoding.mymapapp.MapsActivity" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/red1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Starting place"
+            android:layout_toRightOf="@+id/arrowid"
+            android:textColor="@color/white"
+            android:id="@+id/starting"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Destination"
+            android:layout_toRightOf="@+id/arrowid"
+            android:layout_below="@+id/starting"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:id="@+id/destination"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/arrowid"
+            android:background="@drawable/down_arrow"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

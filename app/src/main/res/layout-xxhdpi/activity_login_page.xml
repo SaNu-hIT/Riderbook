@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/redtexture"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.angeo.newproject.LoginPage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAllCaps="true"
+        android:text="Login"
+        android:layout_marginTop="45dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:paddingTop="15dp"
+        android:text="Hello there,    welcome"
+        android:layout_marginTop="15dp"
+        android:textSize="38sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="30dp"
+        android:gravity="left"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+      android:paddingTop="30dp"
+        android:textColor="#ffffff"
+        android:layout_weight="2"
+        android:id="@+id/username1"
+        android:textColorHint="#ffffff"
+        android:inputType="textPersonName"
+        android:layout_marginRight="30dp"
+        android:hint="Username"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="30dp"
+        android:layout_weight="2"
+        android:textColor="#ffffff"
+        android:id="@+id/password1"
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff"
+        android:layout_marginRight="30dp"
+        android:hint="Password"
+        android:layout_height="0dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:layout_marginRight="30dp"
+        android:text="Login"
+        android:id="@+id/loginbtn"
+        android:textColor="#ff0000"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.3"
+        android:paddingTop="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/forgotpass"
+        android:text="FORGOT PASSWORD?GET NEW!"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/newacct"
+        android:textColor="#ffffff"
+        android:text="DON'T HAVE AN ACCOUNT?SIGN UP!"/>
+</LinearLayout>

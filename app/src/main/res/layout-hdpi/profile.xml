@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#ffffff"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/profpicidlay"
+           android:orientation="vertical"
+           android:gravity="center"
+           >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/profpicid"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user"
+            android:layout_centerHorizontal="true"
+            />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="NAME"
+               android:textColor="#ec2525"
+               android:id="@+id/txtone"
+               android:textSize="15dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="second name"
+               android:textSize="13dp"
+               android:textColor="#ea8787"
+               android:id="@+id/txttwo"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="third name"
+               android:textColor="#e48282"
+               android:id="@+id/txtthree"
+               android:textSize="13dp"
+               />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/profpicidlay"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/walletlay"
+                android:background="@drawable/bg_border_profile"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="  Wallet"
+            android:drawableLeft="@drawable/wallet"
+            android:textColor="#d12b2b"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="60dp"
+            android:gravity="center"
+
+            />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/editprofilelay"
+                android:background="@drawable/bg_border_profile"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="  Edit Profile"
+            android:drawableLeft="@drawable/proficon"
+            android:textColor="#d12b2b"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="60dp"
+            android:gravity="center"
+
+            />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/messagelay"
+                android:background="@drawable/bg_border_profile"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="  Message"
+            android:drawableLeft="@drawable/messages"
+            android:textColor="#d12b2b"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="60dp"
+            android:gravity="center"
+
+            />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/settingslay"
+                android:background="@drawable/bg_border_profile"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="  Settings"
+            android:drawableLeft="@drawable/settings"
+            android:textColor="#d12b2b"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="60dp"
+            android:gravity="center"
+
+            />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="LOGOUT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/logout"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_border_profilesubmit"
+                />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progbar"
+            />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
